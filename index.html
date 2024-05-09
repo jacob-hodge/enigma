@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enigma</title>
+</head>
+<body>
+  <label>Key (5 letters):</label><br>
+  <input type="text" id="key" maxlength="5" oninput="initializeRotorPositions()"><br>
+  <label>Message:</label><br>
+  <textarea id="message" rows="4" cols="50" oninput="encodeNewLetters()"></textarea><br>
+  <label>Encoded/Decoded Message:</label><br>
+  <textarea id="result" rows="4" cols="50" readonly></textarea><br>
+  <button onclick="clearFields()">Clear</button>
+<script src="enigma.js"></script>
+</body>
+</html>
